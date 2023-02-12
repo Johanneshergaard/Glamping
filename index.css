@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* TOP NAVIGATION BAR */
+
+.grid-container nav{
+    grid-column: 7 / span 5;
+    justify-self: end;
+    margin-right: 1rem;
+}
+.nav-logo{
+    grid-column: 2 / span 5;
+    height: 3em;
+    object-fit: contain;
+}
+.li-style{
+    padding: 15px;
+    justify-content: center;
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.top-nav a:visited{
+    color: #fff;
+}
+.top-nav a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-nav{
+    background-color: #023020;
+    box-shadow: 0px 0px 5px black;
+}
+
+.grid-container button{
+    grid-column: 12 / span 1;
+    background-color: #085708; 
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    min-width: 4em;
+    padding:15px 0;
+}
+
+.grid-container button:hover{
+    background-color: #0c7b0c;
+}
+
+/* END OF: TOP NAVIGATION BAR */
+
+
+
+
+
+
+
+
+/* HERO */
+.hero{
+    grid-column: 1 / span 12;
+    max-height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+.text-on-hero {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    font-size: clamp(3rem, 1rem + 1vw ,10rem);
+  }
+
+
+
+
+
+
+
+
+/* First benefit section */
+
+.benefit1-img{
+    display: block;
+    grid-column: 1 / span 6;
+    width: 100%;
+    height: 100%; 
+    padding: 2em;
+    
+}
+.benefit1-text{
+    display: block;
+    grid-column: 7 / span 6;
+    padding: 2em;
+}
+.benefit1-img img{
+    display: block;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.section1-conf{
+    min-height: 500px;
+    background-color: #0eb60e;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Second benefit section */
+
+.benefit2-img{
+    display: block;
+    grid-column: 7 / span 6;
+    width: 100%;
+    height: 100%; 
+    padding: 2em;
+    
+}
+.benefit2-text{
+    display: block;
+    grid-column: 1 / span 6;
+    padding: 2em;
+}
+.benefit2-img img{
+    display: block;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.section2-conf{
+    min-height: 500px;
+    background-color: #9489a4;
+    
+}
+
+
+
+
+
+
+
+
+
+
+  /* LINK ANIMATION START */
+a {
+position: relative;
+color: #fff;
+text-decoration: none;
+}
+
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+a:hover::before {
+transform: scaleX(1);
+}
+/* LINK ANIMATION END */
+@media screen and (max-width: 992px) {
+    .grid-container ul {
+      display: none;
+    }
+  }
+
+
+
+
+
+/* UTILITIES */
+.flex-container{
+    display:flex;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
