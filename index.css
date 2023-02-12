@@ -186,9 +186,20 @@ a:hover::before {
 transform: scaleX(1);
 }
 /* LINK ANIMATION END */
+
+
+
+
+
 @media screen and (max-width: 992px) {
     .grid-container ul {
       display: none;
+    }
+    .benefit1-img{
+        grid-column: 2 /span 10;
+    }
+    .benefit1-text{
+        grid-column: 2 /span 10;
     }
   }
 
